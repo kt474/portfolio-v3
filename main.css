@@ -21,12 +21,6 @@ p {
   width: 35%;
 }
 
-#particles-js {
-  position: absolute;
-  width: 90%;
-  height: 100%;
-}
-
 .header-left {
   margin-top: 2rem;
 }
@@ -118,7 +112,6 @@ p {
   font-size: 2.5rem;
   font-weight: 500;
   overflow: hidden;
-  
 }
 
 .animate-website {
@@ -133,10 +126,10 @@ p {
     animation: animated-website-text 2s linear 3s 5 alternate both,
       animated-website-cursor 11.5s linear 4s 1 normal both;
   }
-  #animation-name{
+  #animation-name {
     border-right: solid 5px;
     animation: animated-text 1.5s linear 1s 1 normal both,
-    animated-cursor 3s linear 1.5s 1 normal both;
+      animated-cursor 3s linear 1.5s 1 normal both;
     white-space: nowrap;
   }
 }
@@ -204,8 +197,7 @@ p {
 }
 
 @media only screen and (max-width: 1400px) {
-  
-  #footer{
+  #footer {
     display: none;
   }
 }
@@ -215,8 +207,13 @@ p {
     margin-bottom: 1rem !important;
   }
   .about-text {
-    max-height: 270px !important;
+    max-height: 500px !important;
     overflow: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main-section-2 {
+    padding-top: 50%;
   }
 }
 
@@ -226,9 +223,9 @@ p {
 }
 .about-text {
   margin-left: 1.2rem;
-  max-height:400px;
+  max-height: 400px;
   min-width: 250px;
-  overflow:auto;
+  overflow: auto;
 }
 
 .text-dec-none {
@@ -306,7 +303,7 @@ p {
   padding: 1rem;
 }
 
-.img-container{
+.img-container {
   max-height: 250px;
   max-width: 250px;
   margin: 0 auto;
@@ -321,7 +318,7 @@ p {
   min-height: 450px;
   max-height: 600px;
   width: 425px;
-  min-width: 250px;
+  min-width: 300px;
   padding: 1.5rem;
   background: #fff;
   border-radius: 1rem;
@@ -335,7 +332,7 @@ p {
   transform: translateX(130px);
 }
 .card-slide:not(:first-child) {
-  margin-left: -130px;
+  margin-left: -50px;
 }
 
 .projects {
@@ -368,7 +365,6 @@ p {
     overflow: auto;
   }
 }
-
 
 photos::-webkit-scrollbar {
   display: none;
@@ -444,16 +440,3 @@ photos::-webkit-scrollbar {
   max-height: 100%;
   max-width: 100%;
 }
-
-
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @media {
-    .safari {
-      margin-top: 0;
-  }
-  .safari-break{
-    margin-top: 3rem;
-  }
-}
-
